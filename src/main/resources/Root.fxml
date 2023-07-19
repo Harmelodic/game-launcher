@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-<VBox xmlns:fx="http://javafx.com/fxml"
-      xmlns="http://javafx.com/javafx"
-      fx:controller="com.harmelodic.gamelauncher.RootController">
-    <Pane fx:id="mainPane" />
-</VBox>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="com.harmelodic.gamelauncher.RootController"
+            fx:id="pane">
+    <top>
+        <ToolBar fx:id="toolbar" minHeight="50"/>
+    </top>
+    <left>
+        <VBox fx:id="gameList" minWidth="150" maxWidth="500" style="-fx-background-color: grey; -fx-padding: 0 20 0 0">
+            <Label text="Your games will be listed here" textFill="white"/>
+        </VBox>
+    </left>
+    <center>
+        <Label text="Game information will be displayed here"/>
+    </center>
+    <right>
+        <!-- Can come back and put filters here -->
+        <VBox fx:id="filters" minWidth="150" style="-fx-background-color: grey" managed="false"/>
+    </right>
+    <bottom>
+        <!-- Can come back and put application info here -->
+        <VBox fx:id="statusBar" minHeight="30" style="-fx-background-color: black" alignment="CENTER" managed="false">
+            <Label text="Built with JavaFX" textFill="white"/>
+        </VBox>
+    </bottom>
+</BorderPane>
