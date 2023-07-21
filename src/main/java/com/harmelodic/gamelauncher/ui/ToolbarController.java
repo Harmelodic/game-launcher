@@ -1,12 +1,12 @@
 package com.harmelodic.gamelauncher.ui;
 
+import com.harmelodic.gamelauncher.ui.settings.SettingsStage;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ToolBar;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Priority;
-import javafx.stage.Stage;
 
 public class ToolbarController {
     @FXML
@@ -22,12 +22,6 @@ public class ToolbarController {
     private void initialize() {
         HBox.setHgrow(toolbarSpacer, Priority.ALWAYS);
 
-        settings.setOnMouseClicked(mouseEvent -> {
-            Stage settingsWindow = new Stage();
-            settingsWindow.setTitle("Settings");
-            settingsWindow.setWidth(600);
-            settingsWindow.setHeight(400);
-            settingsWindow.show();
-        });
+        settings.setOnMouseClicked(mouseEvent -> SettingsStage.open());
     }
 }
