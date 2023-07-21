@@ -56,14 +56,6 @@
                     <noManPages>true</noManPages>
                     <stripDebug>true</stripDebug>
                 </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jlink</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
