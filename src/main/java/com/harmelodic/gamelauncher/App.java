@@ -3,7 +3,6 @@ package com.harmelodic.gamelauncher;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -20,10 +19,10 @@ public class App extends Application {
     }
 
     private void loadUI(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Root.fxml"));
-        BorderPane page = loader.load();
-        Scene scene = new Scene(page);
-        stage.setScene(scene);
+        stage.setScene(
+                new Scene(
+                        new FXMLLoader(getClass().getResource("/Root.fxml"))
+                                .load()));
     }
 
     private void launchWindow(Stage stage) {
