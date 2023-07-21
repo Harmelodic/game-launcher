@@ -1,17 +1,16 @@
-package com.harmelodic.gamelauncher;
+package com.harmelodic.gamelauncher.ui;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.ToolBar;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+
+import java.io.IOException;
 
 public class RootController {
     @FXML
     public BorderPane pane;
-
-    @FXML
-    public ToolBar toolbar;
 
     @FXML
     public VBox gameList;
@@ -23,7 +22,9 @@ public class RootController {
     public VBox statusBar;
 
     @FXML
-    private void initialize() {
+    private void initialize() throws IOException {
         Platform.runLater(() -> pane.requestFocus());
+
+        pane.setTop(new FXMLLoader(getClass().getResource("/Toolbar.fxml")).load());
     }
 }

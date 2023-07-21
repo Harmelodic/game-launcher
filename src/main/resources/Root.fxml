@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             xmlns="http://javafx.com/javafx"
-            fx:controller="com.harmelodic.gamelauncher.RootController"
+            fx:controller="com.harmelodic.gamelauncher.ui.RootController"
             fx:id="pane">
-    <top>
-        <ToolBar fx:id="toolbar" minHeight="50">
-            <Label text="Game Launcher" style="-fx-padding: 0 20 0 20; -fx-font-size: 16;" />
-            <TextField promptText="Find a game..."/>
-        </ToolBar>
-    </top>
     <left>
         <VBox fx:id="gameList" minWidth="150" maxWidth="500" style="-fx-background-color: grey; -fx-padding: 0 20 0 0">
             <Label text="Your games will be listed here" textFill="white"/>
