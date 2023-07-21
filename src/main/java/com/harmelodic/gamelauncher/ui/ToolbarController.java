@@ -19,7 +19,7 @@ public class ToolbarController {
     public Button settings;
 
     @FXML
-    private void initialize() {
+    public void initialize() {
         HBox.setHgrow(toolbarSpacer, Priority.ALWAYS);
 
         settings.setOnMouseClicked(mouseEvent -> SettingsStage.open());

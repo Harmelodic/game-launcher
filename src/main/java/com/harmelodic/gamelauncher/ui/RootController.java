@@ -22,7 +22,7 @@ public class RootController {
     public VBox statusBar;
 
     @FXML
-    private void initialize() throws IOException {
+    public void initialize() throws IOException {
         Platform.runLater(() -> pane.requestFocus());
 
         pane.setTop(new FXMLLoader(getClass().getResource("/Toolbar.fxml")).load());

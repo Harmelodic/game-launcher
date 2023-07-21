@@ -47,8 +47,23 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
+                    <compress>2</compress>
+                    <jlinkImageName>game-launcher</jlinkImageName>
+                    <jlinkZipName>game-launcher</jlinkZipName>
+                    <launcher>game-launcher</launcher>
                     <mainClass>com.harmelodic.gamelauncher.App</mainClass>
+                    <noHeaderFiles>true</noHeaderFiles>
+                    <noManPages>true</noManPages>
+                    <stripDebug>true</stripDebug>
                 </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jlink</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
