@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>game-launcher</name>
-    <description>game-launcher</description>
+    <description>A game launcher for launching games.</description>
 
     <properties>
         <java.version>20</java.version>
