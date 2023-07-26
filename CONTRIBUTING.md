@@ -3,6 +3,13 @@
 I'm not currently looking for active contributors for this project since I am also using this project as an opportunity
 to learn JavaFX.
 
+## Requirements
+
+- JDK (I use Temurin)
+- Maven
+
+Intention is to always use the latest released versions.
+
 ## Running the app for development
 
 Clone the repo and run:
