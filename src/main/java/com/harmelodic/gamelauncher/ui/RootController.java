@@ -15,13 +15,10 @@ public class RootController {
     public BorderPane pane;
 
     @FXML
-    public VBox gameList;
+    public VBox filters; // Unused
 
     @FXML
-    public VBox filters;
-
-    @FXML
-    public HBox statusBar;
+    public HBox statusBar; // Unused
 
     @FXML
     public void initialize() throws IOException {
@@ -29,5 +26,11 @@ public class RootController {
 
         FXMLLoader toolbarLoader = new FXMLLoader(getClass().getResource("/Toolbar.fxml"), App.STRINGS);
         pane.setTop(toolbarLoader.load());
+
+        FXMLLoader libraryLoader = new FXMLLoader(getClass().getResource("/Library.fxml"), App.STRINGS);
+        pane.setLeft(libraryLoader.load());
+
+        FXMLLoader detailsLoader = new FXMLLoader(getClass().getResource("/Details.fxml"), App.STRINGS);
+        pane.setCenter(detailsLoader.load());
     }
 }
