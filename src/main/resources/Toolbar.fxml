@@ -9,8 +9,8 @@
          xmlns="http://javafx.com/javafx"
          fx:controller="com.harmelodic.gamelauncher.ui.ToolbarController"
          fx:id="toolbar" minHeight="50">
-    <Label text="Game Launcher" style="-fx-padding: 0 20 0 20; -fx-font-size: 16;"/>
-    <TextField promptText="Find a game..."/>
+    <Label text="%app.name" style="-fx-padding: 0 20 0 20; -fx-font-size: 16;"/>
+    <TextField promptText="%search.prompt"/>
     <Pane fx:id="toolbarSpacer"/>
-    <Button fx:id="settings" alignment="CENTER_RIGHT" text="Settings"/>
+    <Button fx:id="settings" alignment="CENTER_RIGHT" text="%settings.title"/>
 </ToolBar>

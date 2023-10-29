@@ -4,6 +4,6 @@
             xmlns="http://javafx.com/javafx"
             fx:controller="com.harmelodic.gamelauncher.ui.settings.SettingsController">
     <center>
-        <Label text="Settings will go here"/>
+        <Label text="%settings.content.placeholder" />
     </center>
 </BorderPane>

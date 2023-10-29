@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             xmlns="http://javafx.com/javafx"
@@ -9,11 +10,11 @@
             fx:id="pane">
     <left>
         <VBox fx:id="gameList" minWidth="150" maxWidth="500" style="-fx-background-color: grey; -fx-padding: 0 20 0 0">
-            <Label text="Your games will be listed here" textFill="white"/>
+            <Label text="%library.placeholder" textFill="white"/>
         </VBox>
     </left>
     <center>
-        <Label text="Game information will be displayed here"/>
+        <Label text="%game.information.placeholder"/>
     </center>
     <right>
         <!-- Can come back and put filters here -->
@@ -21,8 +22,8 @@
     </right>
     <bottom>
         <!-- Can come back and put application info here -->
-        <VBox fx:id="statusBar" minHeight="30" style="-fx-background-color: black" alignment="CENTER" managed="false">
-            <Label text="Built with JavaFX" textFill="white"/>
-        </VBox>
+        <HBox fx:id="statusBar" minHeight="30" style="-fx-background-color: black" alignment="CENTER" managed="false">
+            <Label text="%app.built.with" textFill="white"/>
+        </HBox>
     </bottom>
 </BorderPane>
