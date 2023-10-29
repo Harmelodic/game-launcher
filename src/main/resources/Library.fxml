@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:id="gameList"
+      fx:controller="com.harmelodic.gamelauncher.ui.LibraryController"
+      minWidth="150"
+      maxWidth="500"
+      style="-fx-background-color: grey; -fx-padding: 0 20 0 0">
+</VBox>

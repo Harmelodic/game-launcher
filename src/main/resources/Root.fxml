@@ -8,14 +8,6 @@
             xmlns="http://javafx.com/javafx"
             fx:controller="com.harmelodic.gamelauncher.ui.RootController"
             fx:id="pane">
-    <left>
-        <VBox fx:id="gameList" minWidth="150" maxWidth="500" style="-fx-background-color: grey; -fx-padding: 0 20 0 0">
-            <Label text="%library.placeholder" textFill="white"/>
-        </VBox>
-    </left>
-    <center>
-        <Label text="%game.information.placeholder"/>
-    </center>
     <right>
         <!-- Can come back and put filters here -->
         <VBox fx:id="filters" minWidth="150" style="-fx-background-color: grey" managed="false"/>
