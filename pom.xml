@@ -108,7 +108,7 @@
                      (requires JavaFX runtime components still) -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.7.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
