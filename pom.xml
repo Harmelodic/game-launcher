@@ -25,13 +25,13 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>23.0.2</version>
+            <version>24</version>
             <!-- Required for creating JavaFX UI components -->
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>23.0.2</version>
+            <version>24</version>
             <!-- Required for using FXML -->
         </dependency>
 
