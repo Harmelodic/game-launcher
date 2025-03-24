@@ -7,7 +7,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  maven:
+  maven-verify:
     permissions:
       contents: 'read'
       id-token: 'write'
@@ -18,6 +18,4 @@ jobs:
         with:
           distribution: temurin
           java-version: 24
-      - run: >
-          mvn verify
-          --no-transfer-progress
+      - run: mvn verify --no-transfer-progress
